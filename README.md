@@ -1,50 +1,63 @@
-# 🍄 OOP Term Project: Mario-like 2D Platformer
+# 🍄 OOP Term Project: Mario-Style 2D Platformer
 
 ![Java](https://img.shields.io/badge/Language-Java_17%2B-orange?style=for-the-badge&logo=java)
 ![LibGDX](https://img.shields.io/badge/Framework-LibGDX-red?style=for-the-badge&logo=libgdx)
 ![Gradle](https://img.shields.io/badge/Build_Tool-Gradle-02303A?style=for-the-badge&logo=gradle)
 ![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
 
-> **เกม 2D Platformer สไตล์ Mario พัฒนาด้วย Java เพื่อสาธิตการออกแบบเชิงวัตถุ (OOP) อย่างเป็นระบบ**
+> **A Mario-inspired 2D platformer developed in Java to demonstrate robust Object-Oriented Programming (OOP) principles.**
 
-โปรเจกต์นี้เป็นส่วนหนึ่งของรายวิชา Object-Oriented Programming 
+This project is part of the Object-Oriented Programming course. It serves as a practical application of software design patterns, utilizing the **LibGDX** framework to create a functional and scalable game engine.
 
-
-## ✨ Features (จุดเด่นของระบบ)
+## ✨ Key Features
 
 ### 🎮 Gameplay Mechanics
-* **❤️ Health System:** ผู้เล่นเริ่มต้นด้วยหัวใจ 3 ดวง หากชนสิ่งกีดขวางหรือศัตรู เลือดจะลดลง
-* **🪙 Collectibles:** ระบบเก็บเหรียญเพื่อทำคะแนน และไอเท็มหัวใจเพื่อฟื้นฟูพลังชีวิต
-* **🌵 Hazards & Collision:** ระบบตรวจสอบการชน (Collision Detection) ระหว่างผู้เล่น พื้น และสิ่งอันตราย
-* **🏃 Player Movement:** การควบคุมตัวละครที่ลื่นไหล (เดิน, กระโดด, แรงโน้มถ่วง)
+* **❤️ Dynamic Health System:** The player starts with 3 hearts. Health depletes upon collision with enemies or environmental hazards.
+* **🪙 Collectibles & Scoring:** Includes a system for collecting coins (score) and heart items (health restoration).
+* **🌵 Physics & Collision:** Implemented precise collision detection logic between the player, terrain, and hazardous objects.
+* **🏃 Fluid Movement:** Smooth character controls implementing velocity, acceleration, and gravity mechanics.
 
 ### 🧩 OOP Design & Architecture
-* **Modular Design:** แยก Class ตามหน้าที่อย่างชัดเจน (Single Responsibility) เช่น `Player`, `Item`, `Hazard`, `HUD`
-* **Inheritance & Polymorphism:** ใช้หลักการสืบทอดคลาสแม่สำหรับวัตถุในเกม (Game Objects) ทำให้เพิ่มศัตรูหรือไอเท็มใหม่ๆ ได้ง่ายโดยไม่ต้องแก้โค้ดเดิม
-* **Clean Architecture:** แยกส่วนประมวลผล (Logic) ออกจากส่วนแสดงผล (Rendering) ทำให้โค้ดดูแลรักษาง่าย
+This project focuses heavily on clean code structure:
+* **Modular Design:** Classes are strictly separated based on responsibility (SRP) — e.g., `Player`, `Item`, `Hazard`, and `HUD`.
+* **Inheritance & Polymorphism:** Utilizes a base class strategy for Game Objects. This allows for easy extensibility (e.g., adding new enemy types) without modifying the core engine.
+* **Separation of Concerns:** Distinct separation between the Game Logic (Update loop) and the Rendering Layer (Draw loop).
 
----
-
-## 🛠️ Tech Stack (เทคโนโลยีที่ใช้)
+## 🛠️ Tech Stack
 
 * **Language:** Java (JDK 17 or 21)
-* **Framework:** LibGDX (Game Development Framework)
+* **Framework:** LibGDX (Cross-platform game development framework)
 * **Build Tool:** Gradle
 * **IDE:** VS Code / IntelliJ IDEA
 
----
+## 🚀 Getting Started
 
-## 🚀 Getting Started (วิธีเริ่มต้นใช้งาน)
+Follow these steps to run the game on your local machine.
 
-ทำตามขั้นตอนด้านล่างเพื่อรันเกมในเครื่องของคุณ:
+### 1. Prerequisites
+Ensure you have the following installed:
+* **Java JDK 17** or higher
+* **Git**
 
-### 1. Prerequisites (สิ่งที่ต้องมี)
-* Java JDK 17 ขึ้นไป
-* Git
+### 2. Installation & Run
 
-### 2. Installation and run
-```bash
-git clone [https://github.com/Wuttikorn777/OOPtermproject.git](https://github.com/Wuttikorn777/OOPtermproject.git)
-cd OOPtermproject
-.\gradlaw desktop:run
+1.  **Clone the Repository**
+    ```bash
+    git clone [https://github.com/Wuttikorn777/OOPtermproject.git](https://github.com/Wuttikorn777/OOPtermproject.git)
+    ```
+
+2.  **Navigate to Project Directory**
+    ```bash
+    cd OOPtermproject
+    ```
+
+3.  **Run the Game**
+    * **Windows (PowerShell/CMD):**
+        ```bash
+        .\gradlew desktop:run
+        ```
+    * **macOS / Linux:**
+        ```bash
+        ./gradlew desktop:run
+        ```
 
