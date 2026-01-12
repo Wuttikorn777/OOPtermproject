@@ -43,15 +43,12 @@ Ensure you have the following installed:
 
 1.  **Clone the Repository**
     ```bash
-    git clone [https://github.com/Wuttikorn777/OOPtermproject.git](https://github.com/Wuttikorn777/OOPtermproject.git)
-    ```
-
-2.  **Navigate to Project Directory**
-    ```bash
+    git clone https://github.com/WuttikornFunk/OOPtermproject.git
     cd OOPtermproject
     ```
+    
 
-3.  **Run the Game**
+2.  **Run the Game**
     * **Windows (PowerShell/CMD):**
         ```bash
         .\gradlew desktop:run
