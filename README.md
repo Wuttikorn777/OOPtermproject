@@ -30,6 +30,13 @@ This project focuses heavily on clean code structure:
 * **Build Tool:** Gradle
 * **IDE:** VS Code / IntelliJ IDEA
 
+## 📸 Screenshots
+
+<p align="center">
+  <img src="image/game1.png" alt="gameplay Interface" width="90%">
+  <img src="image/death.png" alt="death Interface" width="90%">
+</p>
+
 ## 🚀 Getting Started
 
 Follow these steps to run the game on your local machine.
